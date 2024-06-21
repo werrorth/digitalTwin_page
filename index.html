@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    
+    <div class="title">
+            <div class="time" id="time_day"></div>
+            <div class="time" id="time_date"></div>
+            <div class="time" id="weekday"></div>
+            
+            <div class="time">天气：多云</div>
+         
+            <img id="name" alt="" src="./images/name.png">
+            
+            <div class="container button"><button id="homepage">首页</button></div>
+            <div class="container button" > <button id="backgound">项目背景</button></div>
+            <div class="container button"><button id="datapanel">数据看板</button></div>
+            <div class="container button"><button id="more">更多</button></div>
+        
+        <!-- title part-->
+      
+       
+        
+
+    </div>
+    <div class="viewPart">
+        <!-- view part-->
+        <div class="column">
+            <div class="inner">
+                <!-- sensor information-->
+                <h3>设备信息</h3>
+            </div>
+                <div class="sensorInformation container">
+                    <div id="circleChart"></div>
+                    <div class="">
+                        <div class="right_section container" >
+                            <div class="left"> 
+                                <img src="./images/laptop.png" alt="icon">
+                                <span >正常设备</span>
+                            </div>
+                            <div>
+
+                            </div>
+                           
+                            <span class="number_blue">10</span>
+                        </div>
+                        <div class="right_section container">
+                            <div>
+                                <img src="./images/laptop-xmark.png" alt="icon">
+                                <span>异常设备</span>
+                            </div>
+                            <div>
+
+                            </div>
+                            <span  class="number_blue">1</span>
+                        </div>
+                    </div>
+                </div>
+
+            
+
+            <div class="inner">
+                <h3>传感器数据</h3>
+                <div></div>
+            </div>
+
+            <div  class="panic">
+                <div class="panic">
+                    <img src="./images/icon1.png">
+                    <div>
+                       
+                        <p> 传感器种类</p>
+                       
+                       <p class="number_blue">10</p>  
+                    </div>
+                </div>
+                <div class="panic">
+                    <img src="./images/icon2.png">
+                    <div>
+                       
+                        <p> 传感器总数</p>
+                       
+                        <p class="number_blue">30</p>  
+                    </div>
+                </div>
+            </div>
+            <div class="monitor">
+                 <div class="sensor">
+                    <div class="content" style="display:block">  
+                    <div class="head">
+                        <span class="col"> 异常时间</span>
+                        <span class="col">设备类型</span>
+                        <span class="col">异常代码</span>
+                    </div>
+                </div>
+                    <div class="rolling_view container">
+                        <div class="rolling">
+                            <div class="row">
+                                <span class="col">202310011200</span>
+                                <span class="col"> CTD</span>
+                                <span class="col">001</span>
+                                <span class="icon-dot"></span>
+                            </div>
+                            <div class="row">
+                                <span class="col">202311030800</span>
+                                <span class="col"> ADCP</span>
+                                <span class="col">002</span>
+                                <span class="icon-dot"></span>
+                            </div>
+                            <div class="row">
+                                <span class="col">202312011200</span>
+                                <span class="col"> CTD</span>
+                                <span class="col">001</span>
+                                <span class="icon-dot"></span>
+                            </div>
+                            <div class="row">
+                                <span class="col">202310011200</span>
+                                <span class="col"> CTD</span>
+                                <span class="col">001</span>
+                                <span class="icon-dot"></span>
+                            </div>
+                            <div class="row">
+                                <span class="col">202311030800</span>
+                                <span class="col"> ADCP</span>
+                                <span class="col">002</span>
+                                <span class="icon-dot"></span>
+                            </div>
+                            <div class="row">
+                                <span class="col">202312011200</span>
+                                <span class="col"> CTD</span>
+                                <span class="col">001</span>
+                                <span class="icon-dot"></span>
+                            </div>
+                            <div class="row">
+                                <span class="col">202310011200</span>
+                                <span class="col"> CTD</span>
+                                <span class="col">001</span>
+                                <span class="icon-dot"></span>
+                            </div>
+                            <div class="row">
+                                <span class="col">202311030800</span>
+                                <span class="col"> ADCP</span>
+                                <span class="col">002</span>
+                                <span class="icon-dot"></span>
+                            </div>
+                            <div class="row">
+                                <span class="col">202312011200</span>
+                                <span class="col"> CTD</span>
+                                <span class="col">001</span>
+                                <span class="icon-dot"></span>
+                            </div>
+                            <div class="row">
+                                <span class="col">202310011200</span>
+                                <span class="col"> CTD</span>
+                                <span class="col">001</span>
+                                <span class="icon-dot"></span>
+                            </div>
+                            <div class="row">
+                                <span class="col">202311030800</span>
+                                <span class="col"> ADCP</span>
+                                <span class="col">002</span>
+                                <span class="icon-dot"></span>
+                            </div>
+                            <div class="row">
+                                <span class="col">202312011200</span>
+                                <span class="col"> CTD</span>
+                                <span class="col">001</span>
+                                <span class="icon-dot"></span>
+                            </div>
+                            <div class="row">
+                                <span class="col">202310011200</span>
+                                <span class="col"> CTD</span>
+                                <span class="col">001</span>
+                                <span class="icon-dot"></span>
+                            </div>
+                            <div class="row">
+                                <span class="col">202311030800</span>
+                                <span class="col"> ADCP</span>
+                                <span class="col">002</span>
+                                <span class="icon-dot"></span>
+                            </div>
+                            <div class="row">
+                                <span class="col">202312011200</span>
+                                <span class="col"> CTD</span>
+                                <span class="col">001</span>
+                                <span class="icon-dot"></span>
+                            </div>
+                 
+                        </div>
+                    </div>
+                </div> 
+            </div>
+                
+           
+
+        </div>
+        <div class="column" id="mid">
+            <div>
+                <div class="float_show"></div>
+                <div class="map"></div>
+            </div>
+
+            <div class="panic">
+                <div >
+                    <div class="inner">
+                        <h3>数据集一</h3>
+
+                  </div>
+                    
+                    <div  class="chart" id="dataSet1"></div>
+
+                </div>
+                <div>
+                    <div  class="inner">
+                        <h3>数据集二</h3>
+                    </div>
+                   
+                    <div class="chart" id="dataSet2"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="column">
+            <div>
+                <div class="inner">
+                    <h3>总览统计</h3>
+                </div>
+                <div class="chart"></div>
+                
+            </div>
+            <div>
+                <div class="inner">
+                    <h3>风浪数据</h3>
+                </div>
+                <div class="chart" id="windChart"></div>
+            </div>
+            <div>
+                <div class="inner">
+                    <h3>最大波高</h3>
+                    <div class="chart" id="wave_chart"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/echarts.js"></script>
+ 
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

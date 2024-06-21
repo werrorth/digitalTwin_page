@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+   
+
+   
+    <link rel="stylesheet" href="./css/home.css">
+    
+    
+</head>
+<body >
+    <div class="viewport">
+        
+        <div class="column">
+            <div class="overview panel">
+                <div class="inner">
+                    <div class="item">
+                        <h4>10</h4>
+                        <span>
+                            <i class="icon-dot" style="color: #006cff"></i>
+                            传感器数目
+                        </span>
+                    </div>
+                
+                    <div class="item">
+                        <h4>9</h4>
+                        <span>
+                            <i class="icon-dot" style="color: #6acca3"></i>
+                            正常运行设备
+                        </span>
+                    </div>
+                    <div class="item">
+                        <h4>1</h4>
+                        <span>
+                            <i class="icon-dot" style="color: #ed3f35"></i>
+                            异常设备
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="monitor panel" >
+                <div class="inner">
+                    <div class="content" style="display: block">
+                        <div class="head">
+                            <span class="col"> 异常时间</span>
+                            <span class="col"> 设备类型</span>
+                            <span class="col"> 异常代码</span>
+                        </div>
+                        <div class="marquee-view">
+                            <div class="marquee">
+                                <div class="row">
+                                    <span class="col">202310011200</span>
+                                    <span class="col"> CTD</span>
+                                    <span class="col">001</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">202311030800</span>
+                                    <span class="col"> ADCP</span>
+                                    <span class="col">002</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col">202312011200</span>
+                                    <span class="col"> CTD</span>
+                                    <span class="col">001</span>
+                                    <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                        <span class="col">202310011200</span>
+                                        <span class="col"> CTD</span>
+                                        <span class="col">001</span>
+                                        <span class="icon-dot"></span>
+                                </div>
+                                <div class="row">
+                                        <span class="col">202311030800</span>
+                                        <span class="col"> ADCP</span>
+                                        <span class="col">002</span>
+                                        <span class="icon-dot"></span>
+                                 </div>
+                                <div class="row">
+                                        <span class="col">202312011200</span>
+                                        <span class="col"> CTD</span>
+                                        <span class="col">001</span>
+                                        <span class="icon-dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sensor panel">
+               
+                <div class="container">
+                    <div class="cell">
+                        <button> <img  class="senser_pic" alt="0" src="images/ctd.png"> </button>
+                       <br/><h4>CTD</h4>
+                    </div>
+                    <div class="cell">
+                        <button> <img class="senser_pic" alt="0" src="images/ADCP.png"> </button>
+                        <br/><h4>ADCP</h4>
+                    </div>
+                    <div class="cell">
+                        <button> <img class="senser_pic" alt="0" src="images/air_pressure_sensor.png"> </button>
+                        <br/><h4>气压计</h4>
+                    </div>
+                    <div class="cell">
+                        <button> <img class="senser_pic" alt="0" src="images/wind_sensor.png"> </button>
+                        <br/><h4>风速计</h4>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="cell">
+                        <button> <img  class="senser_pic" alt="0" src="images/ctd.png"> </button>
+                       <br/><h4>CTD</h4>
+                    </div>
+                    <div class="cell">
+                        <button> <img class="senser_pic" alt="0" src="images/ADCP.png"> </button>
+                        <br/><h4>ADCP</h4>
+                    </div>
+                    <div class="cell">
+                        <button> <img class="senser_pic" alt="0" src="images/air_pressure_sensor.png"> </button>
+                        <br/><h4>气压计</h4>
+                    </div>
+                    <div class="cell">
+                        <button> <img class="senser_pic" alt="0" src="images/wind_sensor.png"> </button>
+                        <br/><h4>风速计</h4>
+                    </div>
+                </div>
+              
+            </div>
+          
+           
+        </div>
+        <div class="column">
+            <div class="users panel">
+                <h1>海底观测网浮标数字孪生</h1>
+            </div>
+            <div class="map"  id="webgl">
+                <img src="images/bouy.jpg" alt=" ">
+
+            </div>
+            
+        </div>
+        <div class="column">
+            <div class="clock panel">
+                <p id="time_show"> </p>
+                <p id="day_show"></p>
+                <div>
+                    <!--波浪状况-->
+                    <p>风速<span id="wind_speed"> 10 m/s</span></p>
+                    <p>有效波高：<span id="wave_height">1.25m</span></p>
+                    <p>海浪等级：<span id="wave_degree">中浪</span></p>
+                </div>
+            </div>
+
+            <div class="wave panel" id="windChart">
+               
+            </div>
+            <div class="sensor_show panel">
+
+                <div class="mychart" id="sensor_now"></div>
+
+            </div>
+
+        </div>
+    </div>
+    <canvas id="canvas" style="position: absolute;top: 0;left: 0;"></canvas> 
+</body>
+<script  type="text/javascript" src="js/bg.js"></script>
+
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 --> 
+    <script src="js/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 --> 
+  
+    <!--echarts JS-->
+<script src="js/echarts.js"></script>
+<script src="./js/webgl-utils.js"></script>
+<script src="./js/cuon-matrix.js"></script>
+<script src="./js/cuon-utils.js"></script>
+<script src="./js/cuon-matrix.js"></script>
+
+<script  type="text/javascript" src="js/home.js"></script>
+
+</html>

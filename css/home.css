@@ -1,0 +1,270 @@
+body{
+    line-height: 1.15;
+    font-size: 0.5rem;
+  
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background: url(../images/bg.jpg);
+	background-size: 100% 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+.viewport {
+    /* 限定大小 */
+    min-width: 1024px;
+    max-width: 1920px;
+    min-height: 780px;
+    margin: 0 auto;
+  
+    display: flex;
+    padding: 3.667rem 0.833rem 0;
+   
+}
+.column{
+    flex: 1;
+    position: relative;
+}
+.column:nth-child(2){
+    flex: 4;
+    margin: 1.333rem 0.833rem 0;
+}
+.panel {
+    /* 边框 */
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-image: url(../images/border.png) 51 38 21 132;
+    border-width: 2.125rem 1.583rem 0.875rem 5.5rem;
+    position: relative;
+    margin-bottom: 0.833rem;
+}
+.panel .inner {
+    /* 装内容 */
+    /* height: 60px; */
+    position: absolute;
+    top: -2.125rem;
+    right: -1.583rem;
+    bottom: -0.875rem;
+    left: -5.5rem;
+    padding: 1rem 1.5rem;
+}
+.overview{
+    height: 4.583rem;
+  }
+  .overview .inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  .overview h4{
+    font-size: 1.167rem;
+    padding-left: 0.2rem;
+    color: #fff;
+    margin-bottom: 0.333rem
+  }
+  .overview span{
+    font-size: 0.667rem;
+    color: #4c9bfd;
+}
+
+.monitor{
+	height: 10rem;
+}
+.monitor .inner{
+	padding: 1rem 0;
+	display: flex;
+	flex-direction: column;
+  }
+  .monitor .content{
+	flex: 1;
+	display: none;
+	position: relative;
+  }
+  .monitor .head{
+	background: rgba(255, 255, 255, 0.1);
+	font-size: 0.583rem;
+	padding: 0.5rem 1.5rem;
+	color: #68d8fe;
+	display: flex;
+	justify-content: space-between;
+	line-height: 1.05;
+  }
+  .monitor .col:nth-child(1) {
+	width: 3.2rem;
+  }
+  .monitor .col:nth-child(2) {
+	width: 8.4rem;
+	/* 不换行  一行省略*/
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+  }
+  .monitor .col:nth-child(3) {
+	width: 3.2rem;
+  }
+  .monitor .marquee-view{
+  position: absolute;
+  top: 1.6rem;
+  bottom: 0; 
+  width: 100%; 
+  overflow: hidden;
+}
+
+.monitor .row{
+  line-height: 1.05;
+  padding: 0.5rem 1.5rem;
+  color: #61a8ff;
+  font-size: 0.5rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.monitor .row:hover{
+  color:#68d8ff;
+  background: rgba(255, 255, 255, 0.1);
+}
+.monitor .row:hover .icon-dot{
+  opacity: 1;
+}
+
+.monitor .icon-dot{
+  position: absolute;
+  left: 0.64rem;
+  opacity: 0;
+}
+.monitor .marquee-view{
+	position: absolute;
+	top: 1.6rem;
+	bottom: 0; 
+	width: 100%; 
+	overflow: hidden;
+  }
+  
+  .monitor .row{
+	line-height: 1.05;
+	padding: 0.5rem 1.5rem;
+	color: #61a8ff;
+	font-size: 0.5rem;
+	position: relative; 
+	display: flex;
+	justify-content: space-between;
+  }
+  .monitor .row:hover{
+	color:#68d8ff;
+	background: rgba(255, 255, 255, 0.1);
+  }
+  .monitor .row:hover .icon-dot{
+	opacity: 1;
+  }
+  .monitor .icon-dot{
+	position: absolute;
+	left: 0.64rem;
+	opacity: 0;
+}
+@keyframes row{
+    0%{}
+    100%{
+      transform: translateY(-50%);
+    }
+  }
+  /* 调用动画 */
+.monitor .marquee {
+    /* //infinite永久调用动画 */
+    animation: row  10s linear infinite;
+  }
+  /*鼠标划入 停止动画  */
+  .monitor .marquee:hover {
+    animation-play-state: paused;
+ }
+.sensor{
+    height: 15rem;
+    
+}
+.sensor h2{ 
+    font-size: 1.567rem;
+    padding-left: 0.2rem;
+    color:  #61a8ff;
+    margin-bottom: 0.333rem;
+    flex-flow: column;
+    text-align: center;
+}
+.sensor .container{
+    display: flex;
+    margin-left: -70px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    border: auto;
+}
+.sensor h4{
+    font-size: 1.167rem;
+    padding-left: 0.2rem;
+    color: #fff;
+    margin-bottom: 0.333rem;
+    flex-flow: column;
+    text-align: center;
+    
+}
+.sensor .cell{
+    margin: 5px 5px;
+    
+}
+.sensor img{
+    height: 100px;
+    width: 100px;
+    
+}
+.sensor_show{
+   
+    height: 14.1rem; 
+}
+.sensor_show .mychart{
+    height: 10rem;
+    width:  15rem;
+background-color: white;
+}
+.users {
+   
+   text-align:center;
+  
+}
+.users h1{
+  margin-top: -20px;
+  margin-left: -70px;
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+}
+.map {
+    height: 25rem;
+   
+    margin-bottom: 0.833rem;
+    display: flex;
+    flex-direction: column;
+    vertical-align:middle
+}
+.map img{
+    height: 20rem;
+    width: 20rem;
+    margin: auto;
+    vertical-align:middle
+}
+
+.clock {
+    height: 7.167rem;
+    margin: 0.1rem;
+    font-size: 0.567rem;
+    color: #fff;
+  }
+.wave{
+    height: 12rem;
+    width: 16rem;
+    background-color: #fff;
+    z-index: 1;
+}
+
+canvas{
+  opacity: 0.5;
+    z-index: -11;
+  }

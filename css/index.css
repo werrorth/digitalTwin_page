@@ -1,0 +1,181 @@
+/* rem=24px*/
+html{
+    font-size: 20px;
+}
+body{
+    line-height:  1.15;
+    
+    margin: 10;
+    padding: 10;
+    color:#1FC6FF;
+    background-repeat: no-repeat;
+    background-position:  0 0 / cover;
+    background-color: #0F2839;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.title{
+    margin: 0 auto;
+    width: 100rem;
+    height:2.70rem;
+    display: flex;
+    background:url(../images/Top.png);
+    background-repeat: no-repeat;
+
+}
+.time{
+    
+    font-size: 0.58rem;
+    height:0.875rem;
+    margin:1rem;
+    color:#1FC6FF;
+}
+.container{
+    border: 0.05rem  solid  #1FC6FF;
+    
+}
+.button{
+    
+    margin:0.5rem 0.54rem;
+    display:flex;
+    justify-content: center; 
+    align-items:center;
+    
+}
+.title button{
+    background-color:rgba(31,198,255,0.2);
+    color:#1FC6FF;
+    height:1.60rem;
+    width:3.46rem ;
+    margin:0.1rem;
+    border: 0.05rem  solid  #1FC6FF;
+}
+.title button:hover{
+    color:aliceblue
+} 
+.title #name{
+    margin:0.7rem 13.92rem 1rem 13.82rem 
+}                                                                                    
+
+.viewPart{
+    display: flex;
+}
+
+.column {
+    position:relative;
+    width: 21.5rem;
+    margin:0.6rem;
+}
+.inner{
+    background: linear-gradient(to right ,rgba(31,180,255,0.12),rgba(31,180,255,0));
+    height:2.5rem;
+}
+.inner h3{
+    line-height:2.5rem;
+    font-size: 0.75 rem;
+    color:white;
+}
+.sensorInformation{
+    height:9.2rem;
+    display:flex;
+    
+}
+
+#circleChart{
+    height:7rem;
+    width: 7rem;
+    
+}
+.right_section{
+    width: 10.07rem;
+    height:2.5rem;
+    display:flex
+}
+.panic{
+    display: flex;
+    color:white;
+
+}
+
+.monitor{
+   color:white;
+}
+.monitor .sensor{
+    padding:1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.monitor .content{
+    flex:1;
+    display: none;
+    position:relative;
+}
+.monitor .head{
+    padding:0.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.05;
+    font-size: 0.8rem;
+}
+.monitor .col:nth-child(1){
+    width: 3.2rem;
+}
+.monitor .col:nth-child(2){
+    width: 8.4rem;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+
+}
+.monitor .rolling_view{
+    height: 25.2rem;
+    top:1.6rem;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.monitor .row{
+    line-height: 1.05;
+    color:#fff;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.5rem;
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+}
+.monitor .row:hover{
+    color:#1FC6FF;
+    background: rgba(31,180,255,0.12);
+}
+@keyframes row{
+    0%{}
+    100%{
+      transform: translateY(-50%);
+    }
+  }
+  /* 调用动画 */
+.rolling_view .rolling {
+    /* //infinite永久调用动画 */
+    animation: row  10s linear infinite;
+  }
+  /*鼠标划入 停止动画  */
+.rolling_view .rolling:hover {
+    animation-play-state: paused;
+ }
+
+ #mid{
+    width: 47.8rem;
+
+ }
+ .map{
+    height:32.3rem;
+ }
+ .chart{
+    width: 27.9rem;
+    height:13.05rem;
+}
